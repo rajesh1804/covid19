@@ -13,6 +13,11 @@ function About() {
       <Card.Body>
       <CardDeck>
       <Card>
+        <Card.Header>Project Details:</Card.Header>
+        <Card.Text>
+          &emsp; The source code of this website is available in the following Github Repository --> <SocialIcon url="https://github.com/rajesh1804/covid19" /> <br />
+          &emsp; If the repository is forked or codes are used, mentioned the Repository in your references.
+        </Card.Text>
         <Card.Header>Data Sources:</Card.Header>
         <ListGroup variant="flush">
           <ListGroup.Item><Card.Link href="https://corona.lmao.ninja/"> The NovelCOVID API </Card.Link></ListGroup.Item>
