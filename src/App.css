@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: #231f20;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+  list-style: none;
+}
+
+.canvas-container {
+  height: 75vh;
+  width: 100%;
+  margin-left: 2vh;
+}
