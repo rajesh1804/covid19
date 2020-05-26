@@ -6,8 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Screenshots of the web App
 Homepage =
-![homepage1](src/screenshots/homepage1.jpg)
-![homepage2](src/screenshots/homepage2.jpg)
+![homepage1](src\screenshots\homepage1.jpg)
+![homepage2](src/screenshots/homepage2.jpeg)
 
 India Stats =
 ![indiastats1](src/screenshots/indiastats1.jpg)
@@ -26,8 +26,5 @@ Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
-### To build project
-`npm run build`
-
-### ------------------------------------------------------------------------------------------------------------------
+### --------------------------------------------------------------------------------------------
 If this project is forked or if the source codes are used , mention the Repository in references and give it a star.
