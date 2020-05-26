@@ -14,9 +14,9 @@ function About() {
       <CardDeck>
       <Card>
         <Card.Header>Project Details:</Card.Header>
-        <Card.Text>
-          &emsp; The source code of this website is available in the following Github Repository --> <SocialIcon url="https://github.com/rajesh1804/covid19" /> <br />
-          &emsp; If the repository is forked or codes are used, mentioned the Repository in your references.
+        <Card.Text style={{margin: '10px'}}>
+          The source code of this website is available in the following Github Repository --> <SocialIcon url="https://github.com/rajesh1804/covid19" /> <br />
+          If the repository is forked or codes are used, mentioned the Repository in your references and give the Repository a <span role="img" aria-label="star">⭐</span>.
         </Card.Text>
         <Card.Header>Data Sources:</Card.Header>
         <ListGroup variant="flush">
@@ -52,7 +52,7 @@ function About() {
         </small>
       </Card.Footer>
       <br />
-      <small><p align='right'>Website version: 1.0.3</p></small>
+      <small><p align='right'>Website version: 1.0.4</p></small>
       </Card.Body>
     </Card>
     </div>

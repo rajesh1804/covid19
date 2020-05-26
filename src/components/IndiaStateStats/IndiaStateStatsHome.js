@@ -59,7 +59,9 @@ function IndiaStateStatsHome() {
     var highestConfirmed = [];
     var highestConfirmedState = [];
     stateData.map(data => {
-      highestConfirmed.push(parseInt(data.totalInfected));
+      if (data.region !== 'Total#') {
+        highestConfirmed.push(parseInt(data.totalInfected));
+      }
       return null;
     });
     highestConfirmed = highestConfirmed.sort(function(a, b){return b - a}).slice(0,5);
@@ -79,7 +81,9 @@ function IndiaStateStatsHome() {
     var highestDeadToInfected = [];
     var highestDeadToInfectedState = [];
     stateData.map(data => {
-      highestDeadToInfected.push(parseFloat(data.deadToInfected));
+      if (data.region !== 'Total#') {
+        highestDeadToInfected.push(parseFloat(data.deadToInfected));
+      }
       return null;
     });
     highestDeadToInfected = highestDeadToInfected.sort(function(a, b){return b - a}).slice(0,5);
@@ -99,7 +103,9 @@ function IndiaStateStatsHome() {
     var highestActive = [];
     var highestActiveState = [];
     stateData.map(data => {
-      highestActive.push(parseInt(data.active));
+      if (data.region !== 'Total#') {
+        highestActive.push(parseInt(data.active));
+      }
       return null;
     });
     highestActive = highestActive.sort(function(a, b){return b - a}).slice(0,5);
@@ -121,8 +127,10 @@ function IndiaStateStatsHome() {
     var highestRecoveryState = [];
     var highestRecoveryState2 = [];
     stateData.map(data => {
-      if (parseFloat(data.recovered) > averageRecoveredCases) {
-        highestRecoveryState.push(data);
+      if (data.region !== 'Total#') {
+        if (parseFloat(data.recovered) > averageRecoveredCases) {
+          highestRecoveryState.push(data);
+        }
       }
       return null;
     });

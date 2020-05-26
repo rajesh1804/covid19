@@ -12,7 +12,7 @@ function StatewiseTable({data}) {
     }
     return null;
     });
-    
+
   const columns = [
     {
        name: 'State',
@@ -54,7 +54,7 @@ function StatewiseTable({data}) {
     },
     rows: {
       highlightOnHoverStyle: {
-        backgroundColor: 'grey',
+        backgroundColor: '#04A0A9',
         borderBottomColor: '#FFFFFF',
         borderRadius: '25px',
         outline: '1px solid #FFFFFF',
@@ -84,6 +84,8 @@ function StatewiseTable({data}) {
     <DataTable
       columns={columns}
       data={filteredState.length < 1 ? data : filteredState}
+      defaultSortField={'totalInfected'}
+      defaultSortAsc={false}
       striped
       responsive
       pagination

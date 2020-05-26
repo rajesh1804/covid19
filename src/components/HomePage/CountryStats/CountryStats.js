@@ -28,7 +28,7 @@ function CountryStats({results}) {
     },
     rows: {
       highlightOnHoverStyle: {
-        backgroundColor: 'grey',
+        backgroundColor: '#04A0A9',
         borderBottomColor: '#FFFFFF',
         borderRadius: '25px',
         outline: '1px solid #FFFFFF',
@@ -109,6 +109,8 @@ function CountryStats({results}) {
     <DataTable
       columns={columns}
       data={filteredCountry.length < 1 ? results : filteredCountry}
+      defaultSortField={'cases'}
+      defaultSortAsc={false}
       striped
       responsive
       pagination

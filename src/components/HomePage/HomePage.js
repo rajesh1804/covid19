@@ -60,7 +60,7 @@ function HomePage() {
     {
       alertShow
         ? <div><Alert variant={'warning'} onClose={() => setAlertShow(false)} dismissible>
-          Navigate to <strong>India only Stats</strong> using Navigation menu on top.
+          Use navigation menu on top for <strong>India only Stats</strong>.
         </Alert>
         <Alert variant={'info'} onClose={() => setAlertShow(false)} dismissible>
           Hover / Click on <Button variant="outline-info" size="sm">
