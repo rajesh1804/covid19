@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import CircleLoader from "react-spinners/CircleLoader";
+import LoadingBar from '../LoadingBar/LoadingBar';
 import CountryStats from './CountryStats/CountryStats';
 import WorldSummary from './WorldStatSummary/WorldSummary';
 import Card from 'react-bootstrap/Card';
@@ -38,17 +38,7 @@ function HomePage() {
 
   if(loading) {
     return (
-      <div style={{backgroundColor: 'white', height:'auto', width:'auto'}}>
-      <br /><br /><br /><br />
-      <div style={{display:'flex', justifyContent:'center'}}>
-        <CircleLoader
-              size={50}
-              color={'teal'}
-              loading={loading}
-        />
-      </div>
-      <br /><br /><br /><br />
-      </div>
+      <LoadingBar loading={loading} />
     );
   }
 

@@ -5,7 +5,7 @@ import HighestDeadToInfectedPercentageState from './HighestDeadToInfectedPercent
 import HighestActiveState from './HighestActiveState/HighestActiveState';
 import HighestRecoveryPercentageState from './HighestRecoveryPercentageState/HighestRecoveryPercentageState';
 import Card from 'react-bootstrap/Card';
-import CircleLoader from "react-spinners/CircleLoader";
+import LoadingBar from '../LoadingBar/LoadingBar';
 import Toast from 'react-bootstrap/Toast';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Button from 'react-bootstrap/Button';
@@ -153,17 +153,7 @@ function IndiaStateStatsHome() {
 
   if(loading) {
     return (
-      <div style={{backgroundColor: 'white', height:'auto', width:'auto'}}>
-      <br /><br /><br /><br />
-      <div style={{display:'flex', justifyContent:'center'}}>
-        <CircleLoader
-              size={50}
-              color={'teal'}
-              loading={loading}
-        />
-      </div>
-      <br /><br /><br /><br />
-      </div>
+      <LoadingBar loading={loading} />
     );
   }
 

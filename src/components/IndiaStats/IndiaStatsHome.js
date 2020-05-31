@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
-import CircleLoader from "react-spinners/CircleLoader";
+import LoadingBar from '../LoadingBar/LoadingBar';
 import IndiaTimeSeriesGraph from './IndiaTimeSeries/IndiaTimeSeriesGraph';
 import IndiaStatewiseMap from './IndiaStatewise/IndiaStatewiseMap';
 import StatewiseTable from './IndiaStatewise/StatewiseTable/StatewiseTable';
@@ -57,17 +57,7 @@ function IndiaStatsHome() {
 
   if(loading) {
     return (
-      <div style={{backgroundColor: 'white', height:'auto', width:'auto'}}>
-      <br /><br /><br /><br />
-      <div style={{display:'flex', justifyContent:'center'}}>
-        <CircleLoader
-              size={50}
-              color={'teal'}
-              loading={loading}
-        />
-      </div>
-      <br /><br /><br /><br />
-      </div>
+      <LoadingBar loading={loading} />
     );
   }
 

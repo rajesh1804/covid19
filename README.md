@@ -1,13 +1,13 @@
 ## Covid19 Stats by Rajesh
 
-Project hosted at --> https://covid19app-5f5d3.web.app/
+Web App hosted at --> https://covid19app-5f5d3.web.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### Screenshots of the web App
 Homepage =
 ![homepage1](src\screenshots\homepage1.jpg)
-![homepage2](src/screenshots/homepage2.jpeg)
+![homepage2](src/screenshots/homepage2.jpg)
 
 India Stats =
 ![indiastats1](src/screenshots/indiastats1.jpg)
