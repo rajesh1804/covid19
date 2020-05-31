@@ -6,16 +6,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Screenshots of the web App
 Homepage =
-![homepage1](src\screenshots\homepage1.jpg)
-![homepage2](src/screenshots/homepage2.jpg)
+![homepage1](src/screenshots/homepage1.JPG)
+![homepage2](src/screenshots/homepage2.JPG)
 
 India Stats =
-![indiastats1](src/screenshots/indiastats1.jpg)
-![indiastats2](src/screenshots/indiastats2.jpg)
+![indiastats1](src/screenshots/indiastats1.JPG)
+![indiastats2](src/screenshots/indiastats2.JPG)
 
 State wise Stats =
-![statestats1](src/screenshots/statestats1.jpg)
-![statestats1](src/screenshots/statestats2.jpg)
+![statestats1](src/screenshots/statestats1.JPG)
+![statestats1](src/screenshots/statestats2.JPG)
 
 
 ### To run the project
